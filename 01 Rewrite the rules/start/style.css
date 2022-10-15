@@ -7,14 +7,14 @@
 
 
 body {
-    background-color: var(--first-color)
+    background-color: var(--first-color);
       
 }
 
 .ball {
     width: 100px;
     height: 100px;
-    background-color: var(--second-color)
-    border-radius: var(--border-radius)
+    background-color: var(--second-color);
+    border-radius: var(--border-radius);
 
 }
