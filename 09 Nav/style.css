@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.hamburger {
+  display: none;
+  position: absolute;
+  right: 5%;
+}
+
+header {
+  font-family: "Avenir Next", Calibri, Verdana, sans-serif;
+  background: radial-gradient(circle at -8.9% 51.2%, rgb(88, 158, 85) 0%, rgb(24, 118, 74) 15.9%, rgb(46, 165, 68) 15.9%, rgb(26, 134, 83) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+}
+
+nav {
+  font-style: normal;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px 0 4vw;
+
+}
+
+.nav-brand {
+  font-size: 1.5rem;
+  color: white;
+
+}
+
+
+ul {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-grow: 1;
+  margin-left: 5vw;
+
+}
+
+
+li {
+  list-style: none;
+  margin: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+
+
+.drop {
+  color: rgb(155, 157, 159);
+}
+
+
+.disabled {
+  pointer-events: none;
+  color: rgb(96, 100, 103);
+  margin-left: -1.2rem;
+}
+
+
+
+input {
+  padding: 0.4rem;
+  border-radius: 4px;
+  border: 1px solid rgb(179, 173, 173);
+  width: 40vw;
+  min-width: 50px;
+  max-width: 180px;
+}
+
+
+
+button {
+  margin-left: 1vw;
+  padding: 0.4rem;
+  color: rgb(26, 134, 83);
+  border-radius: 4px;
+  border: 2px solid rgb(26, 134, 83);
+  transition: all 0.2s;
+  background-color: inherit;
+}
+
+button:hover {
+  border: 1.5px solid white;
+  background-color: rgb(20, 108, 67);
+  color: white;
+}
+
+@media (max-width: 768px) {
+
+  li,
+  .search-button {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
